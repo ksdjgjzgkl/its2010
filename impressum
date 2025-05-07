@@ -115,7 +115,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">
+        <a href="https://www.its2010.org/" class="logo">
             <img src="0eafa39b-e9fe-4c35-8704-87aefbf03a7d.png" alt="ITS2010 Logo">
         </a>
         <div class="header-content">
@@ -173,7 +173,7 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 ITS2010. Alle Rechte vorbehalten.</p>
+            <p>&copy; 2025 ITS2010. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
 </body>
