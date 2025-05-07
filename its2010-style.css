@@ -1,0 +1,248 @@
+// its2010-style.css
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #27ae60;
+    --text-color: #333;
+    --light-color: #ecf0f1;
+    --dark-accent: #2980b9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+h3 {
+    color: var(--dark-accent);
+    margin: 1.5rem 0 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul, ol {
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--light-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.feature-box h3 {
+    color: var(--dark-accent);
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.broker-list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.broker-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 0;
+}
+
+.broker-list li:last-child {
+    border-bottom: none;
+}
+
+.group-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.group-box h3 {
+    color: var(--dark-accent);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #219653;
+}
+
+.testimonial {
+    background-color: #f5f9ff;
+    border-left: 4px solid var(--dark-accent);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: var(--light-color);
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .logo {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin: 0 auto 1rem;
+        display: block;
+    }
+    
+    header {
+        padding-top: 1rem;
+    }
+}
